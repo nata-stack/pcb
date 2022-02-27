@@ -1,0 +1,23 @@
+{
+  "name": "pcb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata-stack/pcb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nata-stack/pcb/issues"
+  },
+  "homepage": "https://github.com/nata-stack/pcb#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
