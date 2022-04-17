@@ -250,6 +250,11 @@
     background-size: cover;
 }
 
+.page-header-dones {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/dones/FORALLWOMANKIND_RGB3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
