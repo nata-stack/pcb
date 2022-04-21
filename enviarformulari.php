@@ -47,7 +47,7 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
 
 // Cambia aqui el email. Revisa los nombres de los campos de email y asunto según el video
 // https://www.youtube.com/formaciongrafica
-if (form_mail("piol@placomunitaribarceloneta.org", $_POST[asunto],
-    "Asunto del Formulario:\n\n", $_POST[email]))
+if (form_mail("proves@placomunitaribarceloneta.org", $_POST[asunto],
+    "Nou missatge del formulari web:\n", $_POST[email]))
     header("Location: enviamentok.html");
 ?>
