@@ -260,7 +260,7 @@
     </div>
     <!-- Àmbits de treball end -->
 
-   
+
 
     <!-- Contacte Start -->
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
@@ -297,11 +297,11 @@
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" name="Telèfon" class="form-control border-0" placeholder="Telèfon (opcional)"
-                                        style="height: 55px;">
+                                    <input type="tel" name="Telèfon" class="form-control border-0"
+                                        placeholder="Telèfon (opcional)" style="height: 55px;">
                                 </div>
 
-                                
+
                                 <div class="col-12 col-sm-6">
                                     <select name="Assumpte" required class="form-select border-0" style="height: 55px;">
                                         <option selected>Indica l'assumpte</option>
@@ -321,7 +321,38 @@
                                     <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
                                 </div>
                             </div>
+
+                            <!-- URL de la api de reCAPTCHA v3 per evitar spam a través dels formularis-->
+                        
+                            <script type="text/javascript"
+                                src="https://www.google.com/recaptcha/api.js?render=6LdzV54fAAAAAIc8b1VrMl327JLijqsC-KQqnrNO">
+                            </script>
+
+                            <script type="text/javascript">
+                                function enviarFormulario() {
+
+                                    grecaptcha.ready(function () {
+                                        grecaptcha.execute('6LdzV54fAAAAAIc8b1VrMl327JLijqsC-KQqnrNO', {
+                                            // Defino el valor del action o la acción, este valor también lo coloqué en el input oculto 'action'
+                                            action: 'procesar'
+                                        }).then(function (token) {
+
+                                            // Antes de procesar el formulario, le asigno el token al input oculto 'token' 
+                                            document.getElementById('token').value = token;
+
+                                            // Procesamos el formulario 
+                                            document.getElementById("formulario").submit();
+                                        });
+                                    });
+
+                                }
+                            </script>
+                        
+                            
                         </form>
+
+
+
                     </div>
                 </div>
             </div>
@@ -371,7 +402,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Transparència</h4>
-                    <a class="btn btn-link" href="memos/Memoria_dactuacio_2020_2021.pdf">Memòria 2021 <i class="fa fa-file-pdf"></i></a>
+                    <a class="btn btn-link" href="memos/Memoria_dactuacio_2020_2021.pdf">Memòria 2021 <i
+                            class="fa fa-file-pdf"></i></a>
                     <a class="btn btn-link" href="organigrama.html">Organigrama Pla Comunitari</a>
                 </div>
             </div>
