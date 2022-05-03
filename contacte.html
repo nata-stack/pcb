@@ -187,30 +187,7 @@
                             </div>
 
 
-                            <!-- URL de la api de reCAPTCHA v3 per evitar spam a través dels formularis-->
-                            <script type="text/javascript"
-                                src="https://www.google.com/recaptcha/api.js?render=6LdzV54fAAAAAIc8b1VrMl327JLijqsC-KQqnrNO">
-                            </script>
-
-                            <script type="text/javascript">
-                                function enviarFormulario() {
-
-                                    grecaptcha.ready(function () {
-                                        grecaptcha.execute('6LdzV54fAAAAAIc8b1VrMl327JLijqsC-KQqnrNO', {
-                                            // Defino el valor del action o la acción, este valor también lo coloqué en el input oculto 'action'
-                                            action: 'procesar'
-                                        }).then(function (token) {
-
-                                            // Antes de procesar el formulario, le asigno el token al input oculto 'token' 
-                                            document.getElementById('token').value = token;
-
-                                            // Procesamos el formulario 
-                                            document.getElementById("formulario").submit();
-                                        });
-                                    });
-
-                                }
-                            </script>
+                           
                         </form>
                     </div>
                 </div>
