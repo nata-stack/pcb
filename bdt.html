@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon-96x96.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -187,12 +187,15 @@
                 </p>
 
                 <!--video-->
-                <div class="text-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/36A1VSArcX8?start=0"
+
+                <div class="video-responsive ">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/36A1VSArcX8"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+
+
 
 
                 <!--COM PARTICIPAR?-->
@@ -231,7 +234,7 @@
                     <div class="tab-content" id="myTabContent">
 
                         <!--pestaña 1: usuari bdt-->
-                        <div class="tab-pane fade show active p-5 lead bg-light" id="home" role="tabpanel"
+                        <div class="tab-pane fade show active p-lg-5 lead bg-light" id="home" role="tabpanel"
                             aria-labelledby="home-tab">Com
                             a usuari/a del BdT hauràs d'oferir les teves hores
                             realitzant algún servei o activitat que tu decideixis.
@@ -253,7 +256,9 @@
                                             pensis que t'agradaria compartir amb altres persones perque penses que pot
                                             resultar útil, o divertit, o interessant, o simplement perquè t'agrada i ho
                                             vols oferir. Alguns exemples:
-                                            <img class="img-fluid" src="img/que-puc-oferir.png" alt="">
+                                            <div class="container">
+                                                <img class="img-fluid " src="img/que-puc-oferir.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +289,9 @@
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Doncs comptem amb un programa desenvolupat i
+                                        <div class="accordion-body">Primer de tot t'has de donar d'alta com a usuari/a
+                                            del BdT. Això ho fem presencialment a l'espai de secretaría. <br><br> Un cop
+                                            t'has donat d'alta comptem amb un programa desenvolupat i
                                             cedit per <a href="https://www.bdtonline.org/ca/" target="blank">
                                                 l'Associació de Bancs de Temps (ABdT) <i
                                                     class="bi bi-box-arrow-right"></i></a> que es diu <a
@@ -336,7 +343,7 @@
 
                         <!--pestaña 2: membre equip gestor-->
 
-                        <div class="tab-pane fade lead p-5 bg-light" id="profile" role="tabpanel"
+                        <div class="tab-pane fade lead p-lg-5 bg-light" id="profile" role="tabpanel"
                             aria-labelledby="profile-tab">
                             El Banc del Temps necessita un grup de persones que s'encarreguin de totes les tasques
                             relacionades amb la organització així com de prendre les decisions que es presentin de forma
@@ -347,7 +354,7 @@
                         </div>
                         <!--pestaña 3: secretaría-->
 
-                        <div class="tab-pane fade lead p-5 bg-light" id="contact" role="tabpanel"
+                        <div class="tab-pane fade lead p-lg-5 bg-light" id="contact" role="tabpanel"
                             aria-labelledby="contact-tab">
                             Les persones de la secretaría s'encarreguen de fer les altes de nous membres, de gestionar
                             amb l'aplicació Timeoverflow l'intercanvi d'hores de les persones que no ho facin des de
@@ -355,6 +362,7 @@
                             Que no saps fer res de tot això? <br>
                             No et preocupis, si tens capacitat per fer servir l'ordinador a nivell d'usuari només és
                             qüestió de que et familiaritzis amb el Timeoverflow, t'ajudarem a fer-ho. <br><br>
+                            LES HORES QUE INVERTEIXES EN SECRETARIA LES COBRES I SE SUMEN AL TEU SALDO DEL BdT <BR></BR>
                             Sense secretaría el BdT no pot funcionar, t'animes? <br><br> Et necessitem!
                         </div>
                     </div>
@@ -376,7 +384,8 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">Vull formar part del Banc del Temps</h1>
                         </div>
-                        <p class="mb-4 pb-2">Si vols informació sobre el Banc del temps, vols participar-hi o tens idees
+                        <p class="mb-4 pb-2">Si vols informació sobre el Banc del temps, vols donar-te d'alta o tens
+                            idees
                             i propostes, escriu i et contestarem tan aviat com sigui possible :)</p>
 
                         <!--FORMULARI-->
@@ -404,7 +413,7 @@
                                 <div class="col-12 col-sm-6">
                                     <select name="Assumpte" required class="form-select border-0" style="height: 55px;">
                                         <option selected>Indica què vols fer</option>
-                                        <option value="PIOL">Vull ser membre usuari/a del Bdt</option>
+                                        <option value="PIOL">Vull donar-me d'alta al Bdt</option>
                                         <option value="PIOL">Vull formar part de l'equip gestor</option>
                                         <option value="Casal Comunitari">Vull fer torns a la secretaría</option>
                                         <option value="Altres">Altres</option>
@@ -412,8 +421,8 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <textarea name="Missatge" required class="form-control border-0"
-                                        placeholder="Explica aquí què penses que pots oferir a canvi d'hores. Pensa que pots canviar, ampliar, reduïr sempre que vulguis!"></textarea>
+                                    <textarea rows="7" name="Missatge" required class="form-control border-0"
+                                        placeholder="Explica aquí què vols oferir a canvi d'hores. Pensa que pots canviar, ampliar, reduïr sempre que vulguis!"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
