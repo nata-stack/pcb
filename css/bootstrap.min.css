@@ -232,12 +232,12 @@ sup {
 }
 
 a {
-    color: #AB7442;
+    color: #ffc720;
     text-decoration: none
 }
 
 a:hover {
-    color: #895d35
+    color: #ffc720
 }
 
 a:not([href]):not([class]),
