@@ -3779,14 +3779,14 @@ fieldset:disabled .btn {
 .btn-group-lg>.btn {
     padding: .5rem 1rem;
     font-size: 1.25rem;
-    border-radius: .3rem
+    border-radius: 0rem
 }
 
 .btn-sm,
 .btn-group-sm>.btn {
     padding: .25rem .5rem;
     font-size: .875rem;
-    border-radius: .2rem
+    border-radius: 0rem
 }
 
 .fade {
