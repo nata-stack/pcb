@@ -3093,6 +3093,12 @@ fieldset:disabled .btn {
 }
 
 
+.btn-ambits:hover {
+    color: #3b78aa;
+}
+.btn-ambits:focus {
+    color: #3b78aa;
+}
 
 
 
