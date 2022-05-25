@@ -4398,9 +4398,11 @@ fieldset:disabled .btn {
 }
 
 .nav-pills .nav-link {
-    background: none;
+    background: #3b78aa;
     border: 0;
-    border-radius: 0px
+    border-radius: 0px;
+    color: #fff;
+    margin: 5px 10px 5px 0px;
 }
 
 .nav-pills .nav-link.active,

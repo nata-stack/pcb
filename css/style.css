@@ -23,8 +23,16 @@
 }
 /* End: Video Responsive */
 
-/*Borde azul*/
+/*link azul*/
 
+ a:link li{
+    color: #3b78aa;
+}
+
+/*borde azul*/
+.text-blue{
+    color: #3b78aa;
+}
 
 
 
