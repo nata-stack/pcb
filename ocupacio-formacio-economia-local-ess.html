@@ -188,6 +188,69 @@
                     </div>
                     <!--PROA-->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    
+                         <!--FORMULARI DE CONTACTE-->
+                         <div class="row">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
+                                data-bs-target="#proaModal">
+                                <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
+                            </button>
+                            <!-- Modal -->            
+                            <div class="modal fade" id="proaModal" tabindex="-1" aria-labelledby="proaModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="proaModalLabel">Contacte Proa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium assumenda voluptatum dolores adipisci ducimus, nisi necessitatibus dolor natus nemo temporibus!</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--FORMULARI-->
+                                            <!--he afegit atr name i pattern per validació de dades-->
+                                            <form name="contacte" action="formulari-proa.php" method="post">
+                                                <div class="row g-3">
+                                                    <div class="col-12 col-sm-6">
+                                                        <input name="Nom" required type="text"
+                                                            class="form-control border-1" placeholder="Nom o entitat"
+                                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input name="Email" required type="email"
+                                                            class="form-control border-1" placeholder="Email"
+                                                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                                                            style="height: 55px;">
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="tel" name="Telèfon" class="form-control border-1"
+                                                            placeholder="Telèfon" style="height: 55px;">
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <textarea rows="3" name="Missatge" required
+                                                            class="form-control border-1"
+                                                            placeholder="Missatge"></textarea>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button class="btn btn-primary w-100 py-3"
+                                                            type="submit">Enviar</button>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FORMULARI DE CONTACTE-->
+
                         <img class="img-fluid w-50" style="float:right;" src="img/flyer-proa-BPM-722x1024.jpg" alt="">
                         Barceloneta Proa a la Mar (BPM) és un projecte comunitari
                         innovador de la Barceloneta que neix el 2013 com una <b>iniciativa veïnal</b> i que està
@@ -299,10 +362,9 @@
                     </div>
                     <!--PIOL-->
                     <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+                        
+                        <!--FORMULARI DE CONTACTE-->
                         <div class="row">
-
-
-                             <!--FORMULARI DE CONTACTE-->
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
                                 data-bs-target="#piolModal">
@@ -328,7 +390,7 @@
                                                 <div class="row g-3">
                                                     <div class="col-12 col-sm-6">
                                                         <input name="Nom" required type="text"
-                                                            class="form-control border-1" placeholder="Nom"
+                                                            class="form-control border-1" placeholder="Nom i cognoms"
                                                             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
                                                     </div>
                                                     <div class="col-12 col-sm-6">
@@ -360,10 +422,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--FORMULARI DE CONTACTE-->
-
-                            
                         </div>
+                        <!--FORMULARI DE CONTACTE-->
+                        
                     </div>
                     <!--BdT-->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
