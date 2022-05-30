@@ -191,18 +191,30 @@
 
                         <!--FORMULARI DE CONTACTE-->
                         <div class="row">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                data-bs-target="#proaModal">
-                                <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="proaModal" tabindex="-1" aria-labelledby="proaModalLabel"
+                            <div class="col-lg-3">
+                                <!-- Button trigger modal CONTACTE -->
+                                <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
+                                    data-bs-target="#contacteModal">
+                                    <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
+                                </button>
+                            </div>
+                            <!-- Button MAPA DE PERFILS -->
+                            <div class="col-lg-9">
+                                <button type="button" class="btn btn-succes text-start">
+                                    <a href="mapa-de-perfils.html">
+                                    <h3 style="color: #ffc720">Mapa de perfils professionals 
+                                        <i class="far fa-map"></i></h3>
+                                    </a>
+                                </button>
+                            </div>
+
+                            <!-- Modal CONTACTE-->
+                            <div class="modal fade" id="proaModal" tabindex="-1" aria-labelledby="contacteModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="proaModalLabel">Contacte Proa</h5>
+                                            <h5 class="modal-title" id="contacteModalLabel">Contacte Proa</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -360,11 +372,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Button trigger modal -->
+                        <!-- Button trigger modal CONTACTE -->
                         <div class="row mt-5">
                             <hr>
                             <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                data-bs-target="#proaModal">
+                                data-bs-target="#contacteModal">
                                 <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
                             </button>
                         </div>
@@ -770,13 +782,13 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-guingueta-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-guingueta" type="button" role="tab" aria-controls="pills-guingueta"
-                                aria-selected="false">Guingueta Proa a la Mar</button>
+                                data-bs-target="#pills-guingueta" type="button" role="tab"
+                                aria-controls="pills-guingueta" aria-selected="false">Guingueta Proa a la Mar</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-rbarceloneta-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-rbarceloneta" type="button" role="tab" aria-controls="pills-rbarceloneta"
-                                aria-selected="false">R-Barceloneta</button>
+                                data-bs-target="#pills-rbarceloneta" type="button" role="tab"
+                                aria-controls="pills-rbarceloneta" aria-selected="false">R-Barceloneta</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-garba-tab" data-bs-toggle="pill"
@@ -799,8 +811,8 @@
                             aria-labelledby="pills-rbarceloneta-tab">Contingut R-Barceoneta en construcció
                         </div>
                         <!--La Garba-->
-                        <div class="tab-pane fade" id="pills-garba" role="tabpanel"
-                            aria-labelledby="pills-garba-tab">Contingut La Garba en construcció</div>
+                        <div class="tab-pane fade" id="pills-garba" role="tabpanel" aria-labelledby="pills-garba-tab">
+                            Contingut La Garba en construcció</div>
                     </div>
                 </div>
 
