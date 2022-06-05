@@ -1,0 +1,45 @@
+<!--FORMULARI-->
+<!--he afegit atr name i pattern per validació de dades-->
+
+<form name="contacte" action="formulari-bdt.php" method="post">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <input name="Nom" required type="text" class="form-control border-1" placeholder="El teu nom"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input name="Email" required type="email" class="form-control border-1" placeholder="El teu Email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" style="height: 55px;">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="tel" name="Telèfon" class="form-control border-1" placeholder="Telèfon (opcional)"
+                style="height: 55px;">
+        </div>
+
+
+        <div class="col-12 col-sm-6">
+            <select name="Assumpte" required class="form-select border-1" style="height: 55px;">
+                <option selected>Indica què vols fer</option>
+                <option value="Vull donar-me d'alta al Bdt">Vull donar-me
+                    d'alta al Bdt</option>
+                <option value="Vull formar part de l'equip gestor">Vull
+                    formar part de l'equip
+                    gestor</option>
+                <option value="Vull fer torns a la secretaria">Vull fer
+                    torns a la secretaria
+                </option>
+                <option value="Altres">Altres</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <textarea rows="3" name="Missatge" required class="form-control border-1" placeholder="Missatge"></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+        </div>
+    </div>
+
+
+
+</form>

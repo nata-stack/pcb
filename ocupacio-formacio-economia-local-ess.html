@@ -9,6 +9,10 @@
     <meta
         content="El Pla Comunitari de la Barceloneta és una xarxa formada per veïnat, associacions, entitats, comerços, serveis municipals i administracions que treballem conjuntament per millorar la qualitat de vida de La Barceloneta."
         name="description">
+
+    <!--Script Include html-->
+    <script src="js/include-html.js"></script>
+
     <!-- Favicon -->
     <link href="img/favicon-96x96.png" rel="icon">
 
@@ -46,76 +50,12 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Carrer de la Conreria, 9, 08003 Barcelona</small>
-                </div>
-                <!-- horari
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Dill - Div : 10.00 H - 13.00 H</small>
-                </div>
-                -->
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-solid fa-envelope text-primary me-2"></small>
-                    <small>info@placomunitaribarceloneta.org</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1"
-                        href="https://www.facebook.com/pdcbarceloneta/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://twitter.com/pdcbarceloneta"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1"
-                        href="https://www.youtube.com/channel/UCUlNhQP4swXTLS_BJqsXJRA"><i
-                            class="fab fa-youtube"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0"
-                        href="https://www.instagram.com/pdcbarceloneta/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-xl bg-white navbar-light sticky-top p-0"
-        style="background-image: url(img/vector3.png); background-repeat: no-repeat; background-position: left center; background-size: 300px ">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">Pla Comunitari Barceloneta</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-
-                <a href="nosaltres.html" class="nav-item nav-link">Nosaltres</a>
-
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Àmbits de treball</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="ocupacio-formacio-economia-local-ess.html" class="dropdown-item">Ocupació Formació -
-                            Economia local - ESS</a>
-                        <a href="salut-comunitaria.html" class="dropdown-item">Salut comunitària</a>
-                        <a href="habitatge.html" class="dropdown-item">Habitatge</a>
-                        <a href="serveis.html" class="dropdown-item">Serveis Comunitaris</a>
-                        <a href="educacio-comunitaria.html" class="dropdown-item">Educació comunitària</a>
-                        <a href="solidaritat-i-suport-mutu.html" class="dropdown-item">Solidaritat i suport mutu</a>
-                    </div>
-                </div>
-                <a href="noticies.html" class="nav-item nav-link">Noticies</a>
-                <a href="transparencia.html" class="nav-item nav-link">Transparència</a>
-                <a href="contacte.html" class="nav-item nav-link">Contacte</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+    <!-- Header Start -->
+    <div w3-include-html="layouts/header.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- Header End -->
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
@@ -406,42 +346,13 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                       
+
                                         <div class="modal-body">
-                                            <!--FORMULARI-->
-                                            <!--he afegit atr name i pattern per validació de dades-->
-                                            <form name="contacte" action="formulari-piol.php" method="post">
-                                                <div class="row g-3">
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Nom" required type="text"
-                                                            class="form-control border-1" placeholder="Nom i cognoms"
-                                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Email" required type="email"
-                                                            class="form-control border-1" placeholder="Email"
-                                                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                            style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input type="tel" name="Telèfon" class="form-control border-1"
-                                                            placeholder="Telèfon" style="height: 55px;">
-                                                    </div>
-
-                                                    <div class="col-12">
-                                                        <textarea rows="3" name="Missatge" required
-                                                            class="form-control border-1"
-                                                            placeholder="Observacions"></textarea>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3" type="submit">Demanar
-                                                            cita</button>
-                                                    </div>
-                                                </div>
-
-
-
-                                            </form>
+                                            <!--Formulari de contacte-->
+                                            <div w3-include-html="layouts/formulari-piol.html"></div>
+                                            <script>
+                                                includeHTML();
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
@@ -463,7 +374,6 @@
                     <!--BdT-->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="row">
-
 
                             <!--FORMULARI DE CONTACTE-->
                             <!-- Button trigger modal -->
@@ -489,267 +399,25 @@
                                                 :)</p>
                                         </div>
                                         <div class="modal-body">
-                                            <!--FORMULARI-->
-                                            <!--he afegit atr name i pattern per validació de dades-->
-                                            <!--he creat 2 php per enviament dades a piol@placomun... CANVIAR!! falten fer les proves amb el servidor provar quin dels dos va millor-->
-                                            <form name="contacte" action="formulari-bdt.php" method="post">
-                                                <div class="row g-3">
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Nom" required type="text"
-                                                            class="form-control border-1" placeholder="El teu nom"
-                                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Email" required type="email"
-                                                            class="form-control border-1" placeholder="El teu Email"
-                                                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                            style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input type="tel" name="Telèfon" class="form-control border-1"
-                                                            placeholder="Telèfon (opcional)" style="height: 55px;">
-                                                    </div>
 
+                                            <!--Formulari de contacte-->
+                                            <div w3-include-html="layouts/formulari-bdt.html"></div>
+                                            <script>
+                                                includeHTML();
+                                            </script>
 
-                                                    <div class="col-12 col-sm-6">
-                                                        <select name="Assumpte" required class="form-select border-1"
-                                                            style="height: 55px;">
-                                                            <option selected>Indica què vols fer</option>
-                                                            <option value="Vull donar-me d'alta al Bdt">Vull donar-me
-                                                                d'alta al Bdt</option>
-                                                            <option value="Vull formar part de l'equip gestor">Vull
-                                                                formar part de l'equip
-                                                                gestor</option>
-                                                            <option value="Vull fer torns a la secretaria">Vull fer
-                                                                torns a la secretaria
-                                                            </option>
-                                                            <option value="Altres">Altres</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="col-12">
-                                                        <textarea rows="3" name="Missatge" required
-                                                            class="form-control border-1"
-                                                            placeholder="Missatge"></textarea>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3"
-                                                            type="submit">Enviar</button>
-                                                    </div>
-                                                </div>
-
-
-
-                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!--FORMULARI DE CONTACTE-->
 
-                            <h2>Què és el banc del temps?</h2>
-                            <p class="">
-                                Es tracta d'intercambiar necessitats per habilitats, sense ànim de lucre i sense diners
-                                pel mig.
-                                <br>
-                                <br>
-                                Cada persona usuària és titular d'un compte corrent que registra el saldo de temps
-                                disponible.
-                                Aquest compte corrent el pots gestionar des del teu mòbil o ordinador, com els bancs
-                                normals, amb un
-                                software que es diu
-                                <a href="https://www.timeoverflow.org" target="blank">Timeoverflow <i
-                                        class="bi bi-box-arrow-right"></i></a>
-                                <br>
-                                Si ho prefereixes pots anar a la secretaria
-                                i allà una persona t'acompanyarà en la gestió del teu compte i saldo d'hores.
-                                <br> <br>
-                                La unitat d'intercanvi és l'hora, independentment del servei que s'fereixi o es rebi.
-                                Cada servei,
-                                coneixement, habilitat intercambiada té el mateix valor, mesurat en unitats de temps.
-                            </p>
-
-                            <!--video-->
-
-                            <div class="row g-4">
-                                <div class="col-lg-8 video-responsive">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/36A1VSArcX8"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-lg-4"></div>
-                            </div>
-
-
-                            <!--COM PARTICIPAR?-->
-
                             <div class="">
-                                <h1 class="display-5 mb-4">Com participar?</h1>
-                                <p class=" ">
-                                    Tothom pot participar al Banc del Temps en funció de les ganes i la disponibilitat
-                                    que tingui.
-                                    <br> <br> Formes de
-                                    participació:</p>
-
-
-                                <!--pestañas-->
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" style="color: #ffc720" id="usuari-tab"
-                                            data-bs-toggle="tab" data-bs-target="#usuari" type="button" role="tab"
-                                            aria-controls="usuari" aria-selected="true">Usuari/a del
-                                            BdT</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="gestor-tab" data-bs-toggle="tab"
-                                            data-bs-target="#gestor" type="button" role="tab" aria-controls="gestor"
-                                            aria-selected="false">Membre de l'equip
-                                            gestor</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="secre-tab" data-bs-toggle="tab"
-                                            data-bs-target="#secre" type="button" role="tab" aria-controls="secre"
-                                            aria-selected="false">Funcions de
-                                            secretaria</button>
-                                    </li>
-                                </ul>
-
-                                <!--contenido pestañas-->
-
-                                <div class="tab-content" id="myTabContent">
-
-                                    <!--pestaña 1: usuari bdt-->
-                                    <div class="tab-pane fade show active p-lg-5 bg-light" id="usuari" role="tabpanel"
-                                        aria-labelledby="usuari-tab">Com
-                                        a usuari/a del BdT hauràs d'oferir les teves hores
-                                        realitzant algún servei o activitat que tu decideixis.
-                                        <br> També podràs rebre hores dels serveis, tallers o activitats que
-                                        t'interessin. <br><br>
-                                        <!--acordion-->
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingOne">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                        aria-expanded="false" aria-controls="flush-collapseOne">
-                                                        Què puc oferir?
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingOne"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Pots oferir el que tu vulguis. Qualsevol
-                                                        cosa que
-                                                        pensis que t'agradaria compartir amb altres persones perque
-                                                        penses que pot
-                                                        resultar útil, o divertit, o interessant, o simplement perquè
-                                                        t'agrada i ho
-                                                        vols oferir. Alguns exemples:
-                                                        <div class="container">
-                                                            <img class="img-fluid " src="img/que-puc-oferir.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                        aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                        Què puc rebre?
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingTwo"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Podràs rebre qualsevol de les
-                                                        activitats, serveis,
-                                                        tallers, etc, que ofereixin les altres persones del banc del
-                                                        temps. Per
-                                                        tant, quantes més persones formem part del banc del temps més
-                                                        varietat i més
-                                                        possibilitat de trobar el que necessitem o ens ve de gust.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingThree">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                        aria-expanded="false" aria-controls="flush-collapseThree">
-                                                        I tot això com es fa?
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingThree"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Primer de tot t'has de donar d'alta com
-                                                        a usuari/a
-                                                        del BdT. Això ho fem presencialment a l'espai de secretaria.
-                                                        <br><br> Un cop
-                                                        t'has donat d'alta comptem amb un programa desenvolupat i
-                                                        cedit per <a href="https://www.bdtonline.org/ca/"
-                                                            target="blank">
-                                                            l'Associació de Bancs de Temps (ABdT) <i
-                                                                class="bi bi-box-arrow-right"></i></a> que es diu <a
-                                                            href="https://www.timeoverflow.org"
-                                                            target="blank">Timeoverflow <i
-                                                                class="bi bi-box-arrow-right"></i></a> i que s'assembla
-                                                        molt al
-                                                        les aplicacions de gestió de comptes dels bancs, amb la
-                                                        diferència que
-                                                        amb aquest el que gestionem és temps i no diners. <br>
-                                                        Amb el Timeoverflow també accedim a totes les ofertes i demandes
-                                                        del
-                                                        banc del temps i al contacte dels diferents membres per a poder
-                                                        sol·licitar el seu temps i que ens el sol·licitin a nosaltres.
-                                                        <br> <br>
-                                                        Si Prefereixes tractar amb persones abans que amb el programa
-                                                        pots venir
-                                                        a la secretaria
-                                                        del banc del temps.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--pestaña 2: membre equip gestor-->
-
-                                    <div class="tab-pane fade p-lg-5 bg-light" id="gestor" role="tabpanel"
-                                        aria-labelledby="gestor-tab">
-                                        El Banc del Temps necessita un grup de persones que s'encarreguin de totes les
-                                        tasques
-                                        relacionades amb la organització així com de prendre les decisions que es
-                                        presentin de forma
-                                        consensuada. <br>
-                                        Aquestes tasques inclourien la convocatòria i gestió de tallers, de les
-                                        activitats, de les
-                                        trobades del BdT, de la secretaria, etc. <br><br>
-                                        <b>Sense grup gestor el BdT no pot funcionar, t'animes? <br><br> Et necessitem!
-                                        </b>
-                                    </div>
-                                    <!--pestaña 3: secretaria-->
-
-                                    <div class="tab-pane fade p-lg-5 bg-light" id="secre" role="tabpanel"
-                                        aria-labelledby="-tab">
-                                        Les persones de la secretaria s'encarreguen de fer les altes de nous membres, de
-                                        gestionar
-                                        amb l'aplicació Timeoverflow l'intercanvi d'hores de les persones que no ho
-                                        facin des de
-                                        casa, de contestar consultes i emails sobre el banc del temps, etc. <br><br>
-                                        Que no saps fer res de tot això? <br>
-                                        No et preocupis, si tens capacitat per fer servir l'ordinador a nivell d'usuari
-                                        només és
-                                        qüestió de que et familiaritzis amb el Timeoverflow, t'ajudarem a fer-ho.
-                                        <br><br>
-                                        LES HORES QUE INVERTEIXES EN SECRETARIA LES COBRES I SE SUMEN AL TEU SALDO DEL
-                                        BdT <BR></BR>
-                                        Sense secretaria el BdT no pot funcionar, t'animes? <br><br> Et necessitem!
-                                    </div>
-                                </div>
+                                <!--Contingut-->
+                                <div w3-include-html="layouts/layout-bdt.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
                             </div>
 
 
@@ -839,10 +507,10 @@
                             <div class="container-fluid">
                                 <!--MAPA GOOGLE-->
                                 <div class="row mt-5 ms-1">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5075089490847!2d2.1932577156254336!3d41.38478360411909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30a6b1c02fd%3A0x145aa4b5a35e6eee!2sGuingueta%20Proa%20a%20la%20Mar!5e0!3m2!1ses!2ses!4v1653984248927!5m2!1ses!2ses"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5075089490847!2d2.1932577156254336!3d41.38478360411909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30a6b1c02fd%3A0x145aa4b5a35e6eee!2sGuingueta%20Proa%20a%20la%20Mar!5e0!3m2!1ses!2ses!4v1653984248927!5m2!1ses!2ses"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
 
                                 <!--VIDEO INAUGUARACIÓ GUINGUETA-->
@@ -884,68 +552,10 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5"
-                style="background-image: url(img/vectorbarceloneta-fff-v2-opc33-464x240.png); background-repeat: no-repeat; background-position: right bottom; background-size: 300px">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Adreça</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Carrer de la Conreria, 9, Barcelona
-                    </p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>93 256 33 12</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> info@placomunitaribarceloneta.org</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/pdcbarceloneta"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/pdcbarceloneta/"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.youtube.com/channel/UCUlNhQP4swXTLS_BJqsXJRA"><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/pdcbarceloneta"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Serveis</h4>
-                    <a class="btn btn-link" href="">PIOL: orientació i inserció laboral</a>
-                    <a class="btn btn-link" href="">Casal Comunitari: suport en tràmits</a>
-                    <a class="btn btn-link" href="">Proa a la mar: economia social i solidària</a>
-                    <a class="btn btn-link" href="">Guingueta: emprenedoria comunitària</a>
-                    <a class="btn btn-link" href="">Llibreria La Garba</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Participa!</h4>
-                    <a class="btn btn-link" href="">Bon veïnatge amb la gent gran</a>
-                    <a class="btn btn-link" href="">Bon vehí, bon profit</a>
-                    <a class="btn btn-link" href="">Escola de Salut</a>
-                    <a class="btn btn-link" href="">Assemblea d'habitatge</a>
-                    <a class="btn btn-link" href="">Taula per a l'equitat de gènere</a>
-                    <a class="btn btn-link" href="">Taula plàstic zero</a>
-                    <a class="btn btn-link" href="bdt.html">Banc del Temps</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Transparència</h4>
-                    <a class="btn btn-link" href="memos/Memoria_dactuacio_2020_2021.pdf">Memòria 2021 <i
-                            class="fa fa-file-pdf"></i></a>
-                    <a class="btn btn-link" href="organigrama.html">Organigrama Pla Comunitari</a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; Pla Comunitari Barceloneta
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        Designed By Pla Comunitari Barceloneta
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <div w3-include-html="layouts/footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
     <!-- Footer End -->
 
 

@@ -11,39 +11,7 @@
         name="description">
 
     <!--Script Include html-->
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
-    </script>
+    <script src="js/include-html.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon-96x96.png" rel="icon">
@@ -386,51 +354,11 @@
                             idees
                             i propostes, escriu i et contestarem tan aviat com sigui possible :)</p>
 
-                        <!--FORMULARI-->
-                        <!--he afegit atr name i pattern per validació de dades-->
-                        <!--he creat 2 php per enviament dades a proves@placomun... CANVIAR!! falten fer les proves amb el servidor provar quin dels dos va millor-->
-                        <form name="contacte" action="enviarformulari.php" method="post">
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input name="Nom" required type="text" class="form-control border-0"
-                                        placeholder="Nom" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input name="Email" required type="email" class="form-control border-0"
-                                        placeholder="Email"
-                                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="tel" name="Telèfon" class="form-control border-0"
-                                        placeholder="Telèfon (opcional)" style="height: 55px;">
-                                </div>
-
-
-                                <div class="col-12 col-sm-6">
-                                    <select name="Assumpte" required class="form-select border-0" style="height: 55px;">
-                                        <option selected>Indica l'assumpte</option>
-                                        <option value="PIOL">Ocupació formació-Economia local
-                                        </option>
-                                        <option value="PIOL">Salut comunitària</option>
-                                        <option value="Casal Comunitari">Habitatge</option>
-                                        <option value="Barceloneta diversa">Serveis comunitaris
-                                        </option>
-                                        <option value="Altres">Educació comunitària</option>
-                                        <option value="Altres">Solidaritat i suport mutu</option>
-                                        <option value="Altres">Altres</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-12">
-                                    <textarea name="Missatge" required class="form-control border-0"
-                                        placeholder="Escriu el teu missatge"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
+                        <!--Formulari de contacte-->
+                        <div w3-include-html="layouts/formulari-contacte.html"></div>
+                        <script>
+                            includeHTML();
+                        </script>
 
 
 
