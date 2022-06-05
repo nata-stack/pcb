@@ -2,8 +2,6 @@
 <html lang="ca">
 
 <head>
-
-
     <meta charset="utf-8">
     <title>Pla Comunitari Barceloneta</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -11,6 +9,42 @@
     <meta
         content="El Pla Comunitari de la Barceloneta és una xarxa formada per veïnat, associacions, entitats, comerços, serveis municipals i administracions que treballem conjuntament per millorar la qualitat de vida de La Barceloneta."
         name="description">
+
+    <!--Script Include html-->
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+
     <!-- Favicon -->
     <link href="img/favicon-96x96.png" rel="icon">
 
@@ -47,77 +81,12 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Carrer de la Conreria, 9, 08003 Barcelona</small>
-                </div>
-                <!-- horari
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Dill - Div : 10.00 H - 13.00 H</small>
-                </div>
-                -->
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-solid fa-envelope text-primary me-2"></small>
-                    <small>info@placomunitaribarceloneta.org</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1"
-                        href="https://www.facebook.com/pdcbarceloneta/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://twitter.com/pdcbarceloneta"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1"
-                        href="https://www.youtube.com/channel/UCUlNhQP4swXTLS_BJqsXJRA"><i
-                            class="fab fa-youtube"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0"
-                        href="https://www.instagram.com/pdcbarceloneta/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-xl bg-white navbar-light sticky-top p-0"
-        style="background-image: url(img/vector3.png); background-repeat: no-repeat; background-position: left center; background-size: 300px ">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">Pla Comunitari Barceloneta</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-
-                <a href="nosaltres.html" class="nav-item nav-link">Nosaltres</a>
-
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Àmbits de treball</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="ocupacio-formacio-economia-local-ess.html" class="dropdown-item">Ocupació Formació -
-                            Economia local - ESS</a>
-                        <a href="salut-comunitaria.html" class="dropdown-item">Salut comunitària</a>
-                        <a href="habitatge.html" class="dropdown-item">Habitatge</a>
-                        <a href="serveis.html" class="dropdown-item">Serveis Comunitaris</a>
-                        <a href="educacio-comunitaria.html" class="dropdown-item">Educació comunitària</a>
-                        <a href="solidaritat-i-suport-mutu.html" class="dropdown-item">Solidaritat i suport mutu</a>
-                    </div>
-                </div>
-                <a href="noticies.html" class="nav-item nav-link">Noticies</a>
-                <a href="transparencia.html" class="nav-item nav-link">Transparència</a>
-                <a href="contacte.html" class="nav-item nav-link">Contacte</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+    <!-- Header Start -->
+    <div w3-include-html="layouts/header.html"></div>
+    <script>
+        includeHTML();
+    </script>
+    <!-- Header End -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5">
@@ -129,13 +98,18 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Benvinguts i benvingudes
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Benvinguts i
+                                    benvingudes
                                 </h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Pla Comunitari Barceloneta
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Pla Comunitari
+                                    Barceloneta
                                 </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">El Pla Comunitari de la Barceloneta és
-                                    una xarxa formada per veïnat, associacions, entitats, comerços, serveis municipals i
-                                    administracions que treballem conjuntament per millorar la qualitat de vida de La
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">El Pla Comunitari de la Barceloneta
+                                    és
+                                    una xarxa formada per veïnat, associacions, entitats, comerços, serveis
+                                    municipals i
+                                    administracions que treballem conjuntament per millorar la qualitat de vida de
+                                    La
                                     Barceloneta.</p>
                                 <a href="nosaltres.html"
                                     class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Saber
@@ -152,11 +126,15 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">cultura marinera de la
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">cultura marinera de
+                                    la
                                     Barceloneta </h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Guingueta proa a la mar</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Una iniciativa d’emprenedoria comunitària
-                                    que vol impulsar, potenciar i enfortir l’economia local de la Barceloneta amb valors
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Guingueta proa a la mar
+                                </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Una iniciativa d’emprenedoria
+                                    comunitària
+                                    que vol impulsar, potenciar i enfortir l’economia local de la Barceloneta amb
+                                    valors
                                     de l’economia social i solidària.</p>
                                 <a href="pensar.html"
                                     class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Saber
@@ -318,7 +296,8 @@
                                                 <li>Banc del Temps</li>
                                             </a>
                                         </ul>
-                                    <li><span class="dropdown-item-text">Iniciatives d'emprenedoria comunitària</span>
+                                    <li><span class="dropdown-item-text">Iniciatives d'emprenedoria
+                                            comunitària</span>
                                         <ul>
                                             <a href="ocupacio-formacio-economia-local-ess.html">
                                                 <li>Guingueta Proa a la Mar</li>
@@ -389,14 +368,13 @@
     </div>
     <!-- Àmbits de treball end -->
 
-
-
     <!-- Contacte Start -->
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 600px;">
-                    <div class="position-relative h-100" style="background-image: url(img/GUINGUETA_POSTER_RGB-724x1024.jpg); background-repeat: no-repeat; background-size: cover;">   
+                    <div class="position-relative h-100"
+                        style="background-image: url(img/GUINGUETA_POSTER_RGB-724x1024.jpg); background-repeat: no-repeat; background-size: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -404,7 +382,8 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">Contacte</h1>
                         </div>
-                        <p class="mb-4 pb-2">Si vols informació sobre el Pla Comunitari, vols participar-hi o tens idees
+                        <p class="mb-4 pb-2">Si vols informació sobre el Pla Comunitari, vols participar-hi o tens
+                            idees
                             i propostes, escriu i et contestarem tan aviat com sigui possible :)</p>
 
                         <!--FORMULARI-->
@@ -462,144 +441,11 @@
     </div>
     <!-- Contacte End -->
 
-    
-
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Adreça</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Carrer de la Conreria, 9, Barcelona</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>93 256 33 12</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> info@placomunitaribarceloneta.org</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/pdcbarceloneta"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/pdcbarceloneta/"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.youtube.com/channel/UCUlNhQP4swXTLS_BJqsXJRA"><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/pdcbarceloneta"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Serveis</h4>
-                    <a class="btn btn-link" href="">PIOL: orientació i inserció laboral</a>
-                    <a class="btn btn-link" href="">Casal Comunitari: suport en tràmits</a>
-                    <a class="btn btn-link" href="">Proa a la mar: economia social i solidària</a>
-                    <a class="btn btn-link" href="">Guingueta: emprenedoria comunitària</a>
-                    <a class="btn btn-link" href="">Llibreria La Garba</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Participa!</h4>
-                    <a class="btn btn-link" href="">Bon veïnatge amb la gent gran</a>
-                    <a class="btn btn-link" href="">Bon vehí, bon profit</a>
-                    <a class="btn btn-link" href="">Escola de Salut</a>
-                    <a class="btn btn-link" href="">Assemblea d'habitatge</a>
-                    <a class="btn btn-link" href="">Taula per a l'equitat de gènere</a>
-                    <a class="btn btn-link" href="">Taula plàstic zero</a>
-                    <a class="btn btn-link" href="bdt.html">Banc del Temps</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Transparència</h4>
-                    <a class="btn btn-link" href="memos/Memoria_dactuacio_2020_2021.pdf">Memòria 2021 <i
-                            class="fa fa-file-pdf"></i></a>
-                    <a class="btn btn-link" href="organigrama.html">Organigrama Pla Comunitari</a>
-                </div>
-            </div>
-
-            
-            <!--MAILCHIMP-->
-            <div class="row g-5 mt-1 justify-content-center">
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: #f5f5f5;
-
-                        clear: left;
-                        font: 14px "open sans", sans-serif;
-                        width: auto;
-                        border: solid;
-                        border-width: 30px;
-                        border-color: #ffc720;
-                    }
-
-                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div class="px-5 py-2" id="mc_embed_signup">
-                    <form
-                        action="https://placomunitaribarceloneta.us18.list-manage.com/subscribe/post?u=775f447a7bd670e1a3dd4c9be&amp;id=e58582fbd7"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <h2 style="color: #3b78aa">Vull rebre el butlleti mensual del Pla Comunitari</h2>
-                            
-                            <div class="mc-field-group">
-                                
-                                <input type="email" value="" name="EMAIL" class="required email py-3 px-2" id="mce-EMAIL" placeholder="Email" style="border-radius: 0%; border: none;">
-                            </div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_775f447a7bd670e1a3dd4c9be_e58582fbd7" tabindex="-1" value=""></div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input type="submit" value="Subscriure'm" name="subscribe" id="mc-embedded-subscribe"
-                                        class="button" style="background-color: #3b78aa; border-radius: 0%;">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-                </script>
-                <script type='text/javascript'>
-                    (function ($) {
-                        window.fnames = new Array();
-                        window.ftypes = new Array();
-                        fnames[0] = 'EMAIL';
-                        ftypes[0] = 'email';
-                        fnames[1] = 'FNAME';
-                        ftypes[1] = 'text';
-                        fnames[2] = 'LNAME';
-                        ftypes[2] = 'text';
-                        fnames[3] = 'ADDRESS';
-                        ftypes[3] = 'address';
-                        fnames[4] = 'PHONE';
-                        ftypes[4] = 'phone';
-                        fnames[5] = 'BIRTHDAY';
-                        ftypes[5] = 'birthday';
-                    }(jQuery));
-                    var $mcj = jQuery.noConflict(true);
-                </script>
-                <!--End mc_embed_signup-->
-            </div>
-
-
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; Pla Comunitari Barceloneta
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        Designed By Pla Comunitari Barceloneta
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div w3-include-html="layouts/footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
     <!-- Footer End -->
 
 
