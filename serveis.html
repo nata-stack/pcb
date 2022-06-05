@@ -200,42 +200,13 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-
+                                        <!--Formulari-->
                                         <div class="modal-body">
-                                            <!--FORMULARI-->
-                                            <!--he afegit atr name i pattern per validació de dades-->
-                                            <form name="contacte" action="formulari-casal-comunitari.php" method="post">
-                                                <div class="row g-3">
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Nom" required type="text"
-                                                            class="form-control border-0" placeholder="Nom"
-                                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input name="Email" required type="email"
-                                                            class="form-control border-0" placeholder="Email"
-                                                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                            style="height: 55px;">
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <input type="tel" name="Telèfon" class="form-control border-0"
-                                                            placeholder="Telèfon" style="height: 55px;">
-                                                    </div>
+                                            <div w3-include-html="layouts/formulari-casal-comunitari.html"></div>
+                                            <script>
+                                                includeHTML();
+                                            </script>
 
-
-                                                    <div class="col-12">
-                                                        <textarea name="Missatge" required class="form-control border-0"
-                                                            placeholder="Escriu un missatge si vols"></textarea>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3" type="submit">Demanar
-                                                            cita</button>
-                                                    </div>
-                                                </div>
-
-
-
-                                            </form>
                                         </div>
                                     </div>
                                 </div>
