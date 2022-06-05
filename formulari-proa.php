@@ -47,7 +47,7 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
 
 // Cambiar aqui el email donde se quieren recibir los mensajes.
 
-if (form_mail("barcelonetaproalamar@gmail.com", $_POST[asunto],
+if (form_mail("naticujo@gmail.com", $_POST[asunto],
     "Nou missatge del formulari web:\n", $_POST[email]))
     header("Location: enviamentok.html");
 ?>
