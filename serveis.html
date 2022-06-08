@@ -119,135 +119,24 @@
                     </div>
                     <!--PIOL-->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-                        <!--FORMULARI DE CONTACTE-->
-                        <div class="row p-0">
-                            <hr>
-                            <div class="col-lg-3 p-0">
-                                <!-- Button trigger modal CONTACTE -->
-                                <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                    data-bs-target="#contacteModal">
-                                    <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
-                                </button>
-                            </div>
-                            <hr>
-                            <!-- Modal CONTACTE-->
-                            <div class="modal fade" id="contacteModal" tabindex="-1"
-                                aria-labelledby="contacteModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="contacteModalLabel">Demana cita al PIOL </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-
-                                        <div class="modal-body">
-
-                                            <!--Formulari de contacte-->
-                                            <div w3-include-html="layouts/formulari-piol.html"></div>
-                                            <script>
-                                                includeHTML();
-                                            </script>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--FORMULARI DE CONTACTE-->
-
-
-                        <img class="img-fluid w-100 w- mb-4" src="img/PIOL-1024x512.png" alt="">
-                        <p class="">
-
-                            Explicació breu PIOL
-                        </p>
-                        <!-- Button trigger modal CONTACTE -->
-                        <div class="row mt-5">
-                            <hr>
-                            <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                data-bs-target="#contacteModal">
-                                <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
-                            </button>
-                            <hr>
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-piol-curt.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
                         </div>
                     </div>
-
-
                     <!--CASAL COMUNITARI-->
                     <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
-
-                        <!--FORMULARI DE CONTACTE-->
-                        <div class="row p-0">
-                            <hr>
-                            <div class="col-lg-3 p-0">
-                                <!-- Button trigger modal CONTACTE -->
-                                <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                    data-bs-target="#contacte2Modal">
-                                    <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
-                                </button>
-                            </div>
-                            <hr>
-                            <!-- Modal CONTACTE-->
-                            <div class="modal fade" id="contacte2Modal" tabindex="-1"
-                                aria-labelledby="contacte2ModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="contacte2ModalLabel">Demana cita al Casal
-                                                Comunitari </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <!--Formulari-->
-                                        <div class="modal-body">
-                                            <div w3-include-html="layouts/formulari-casal-comunitari.html"></div>
-                                            <script>
-                                                includeHTML();
-                                            </script>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--FORMULARI DE CONTACTE-->
-
-
-                        <img class="img-fluid w-100 ms-2" src="img/logo-casal-comunitari.jpg" alt="">
-                        <p class="">
-
-                            El Casal Comunitari de la Barceloneta és un servei posat en marxa des de la Xarxa Solidària
-                            de la Barceloneta, amb l’objectiu d’ajudar als habitants del Barri amb els diferents tràmits
-                            telemàtics que van sorgir durant la pandèmia arran del bloqueig administratiu generalitzat i
-                            la necessitat d’obtenir cites prèvies per a qualsevol servei. <br><br>
-
-                            El treball del Casal Comunitari és per tant reduir la bretxa digital existent, sigui pel
-                            motiu que sigui, i col·laborar amb les veïnes i veïns en els tràmits amb les diferents
-                            administracions i serveis públics. <br> <br>
-
-                            El servei està disponible en el Centre Cívic de la Barceloneta, i actualment dona servei
-                            durant quatre hores al dia de dilluns a divendres. <br>
-                        </p>
-                        <div class="container-fluid">
-                            <h3 class="text-center mt-5" style="color: #3b78aa;">¿Qué ayudas corresponden a mi
-                                situación?</h3>
-                            <a href="mapa-interactiu/Diagrama_Base.pdf" target="_blank"> <img
-                                    class="img-fluid w-100 ms-2" src="img/portada-pdf-ayudas.png" alt=""></a>
-                        </div>
-                        <!-- Button trigger modal CONTACTE -->
-                        <div class="row mt-5">
-                            <hr>
-                            <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal"
-                                data-bs-target="#contacte2Modal">
-                                <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
-                            </button>
-                            <hr>
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-casal-comunitari.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

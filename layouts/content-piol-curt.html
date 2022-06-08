@@ -1,0 +1,48 @@
+<!--FORMULARI DE CONTACTE-->
+<div class="row p-0">
+    <hr>
+    <div class="col-lg-3 p-0">
+        <!-- Button trigger modal CONTACTE -->
+        <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal" data-bs-target="#contacteModal">
+            <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
+        </button>
+    </div>
+    <hr>
+    <!-- Modal CONTACTE-->
+    <div class="modal fade" id="contacteModal" tabindex="-1" aria-labelledby="contacteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contacteModalLabel">Demana cita al PIOL </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!--Formulari de contacte-->
+                    <div w3-include-html="layouts/formulari-piol.html"></div>
+                    <script>
+                        includeHTML();
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FORMULARI DE CONTACTE-->
+
+
+<img class="img-fluid w-100 w- mb-4" src="img/PIOL-1024x512.png" alt="">
+<p class="">
+
+    Explicació breu PIOL
+</p>
+<!-- Button trigger modal CONTACTE -->
+<div class="row mt-5">
+    <hr>
+    <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal" data-bs-target="#contacteModal">
+        <h3 style="color: #ffc720">Demana cita <i class="far fa-comment-dots"></i></h3>
+    </button>
+    <hr>
+</div>
