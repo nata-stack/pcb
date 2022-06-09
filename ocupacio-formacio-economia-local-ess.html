@@ -40,14 +40,7 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Carregant...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+
 
 
     <!-- Header Start -->
@@ -92,8 +85,6 @@
                 <!--PROJECTES-->
                 <div class="">
                     <h1 class="display-5 my-4">Projectes</h1>
-                    <p class="">
-                    </p>
                     <!--BOTONS (PILLS)-->
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -119,133 +110,127 @@
                                 aria-selected="false">Banc del Temps</button>
                         </li>
                     </ul>
-                </div>
-                <!--CONTINGUT BOTONS (PILLS)-->
-                <div class="tab-content" id="pills-tabContent">
-                    <!--TANCA-->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab">
-                    </div>
-                    <!--PROA-->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <!--Contingut-->
-                        <div class="">
-                            <div w3-include-html="layouts/content-proa.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
+                    <!--CONTINGUT BOTONS (PILLS)-->
+                    <div class="tab-content" id="pills-tabContent">
+                        <!--TANCA-->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
                         </div>
-                    </div>
-                    <!--PIOL-->
-                    <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
-                        <!--Contingut-->
-                        <div class="">
-                            <div w3-include-html="layouts/content-piol.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
+                        <!--PROA-->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <!--Contingut-->
+                            <div class="">
+                                <div w3-include-html="layouts/content-proa.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
                         </div>
+                        <!--PIOL-->
+                        <div class="tab-pane fade" id="pills-profile2" role="tabpanel"
+                            aria-labelledby="pills-profile2-tab">
+                            <!--Contingut-->
+                            <div class="">
+                                <div w3-include-html="layouts/content-piol.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
 
-                    </div>
-                    <!--BdT-->
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <!--Contingut-->
-                        <div class="">
-
-                            <div w3-include-html="layouts/content-bdt.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-    </div>
+                        <!--BdT-->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <!--Contingut-->
+                            <div class="">
 
-
-    <!--INICIATIVES EMPRENEDORIA COMUNITARIA-->
-    <div class="row mt-5">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-9 border-start text-blue border-5">
-            <!--Iniciatives-->
-            <div class="">
-                <h1 class="display-5 my-4">Iniciatives d'emprenedoria comunitària</h1>
-                <p class="lead ">
-                </p>
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-tancar-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-tancar" type="button" role="tab" aria-controls="pills-tancar"
-                            aria-selected="true"><i class="fas fa-times"></i></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-guingueta-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-guingueta" type="button" role="tab" aria-controls="pills-guingueta"
-                            aria-selected="false">Guingueta Proa a la Mar</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-rbarceloneta-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-rbarceloneta" type="button" role="tab"
-                            aria-controls="pills-rbarceloneta" aria-selected="false">R-Barceloneta</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-garba-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-garba" type="button" role="tab" aria-controls="pills-garba"
-                            aria-selected="false">Llibreria La Garba</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <!--TANCA-->
-                    <div class="tab-pane fade show active" id="pills-tancar" role="tabpanel"
-                        aria-labelledby="pills-tancar-tab">
-                    </div>
-                    <!--GUINGUETA-->
-                    <div class="tab-pane fade" id="pills-guingueta" role="tabpanel"
-                        aria-labelledby="pills-guingueta-tab">
-                        <!--Contingut-->
-                        <div class="">
-                            <div w3-include-html="layouts/content-guingueta.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
-                        </div>
-                    </div>
-                    <!--R-Barceloneta-->
-                    <div class="tab-pane fade" id="pills-rbarceloneta" role="tabpanel"
-                        aria-labelledby="pills-rbarceloneta-tab">
-                        <!--Contingut-->
-                        <div class="">
-                            <div w3-include-html="layouts/content-r-barceloneta.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
-                        </div>
-                    </div>
-                    <!--La Garba-->
-                    <div class="tab-pane fade" id="pills-garba" role="tabpanel" aria-labelledby="pills-garba-tab">
-                        <!--Contingut-->
-                        <div class="">
-                            <div w3-include-html="layouts/content-garba.html"></div>
-                            <script>
-                                includeHTML();
-                            </script>
+                                <div w3-include-html="layouts/content-bdt.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-lg-2"></div>
         </div>
-        
+
+        <!--PROJECTES-->
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-9 border-start text-blue border-5">
+                <!--PROJECTES-->
+                <div class="">
+                    <h1 class="display-5 my-4">Projectes</h1>
+                    <!--BOTONS (PILLS)-->
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-tancar-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tancar" type="button" role="tab" aria-controls="pills-tancar"
+                                aria-selected="true"><i class="fas fa-times"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-guingueta-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-guingueta" type="button" role="tab"
+                                aria-controls="pills-guingueta" aria-selected="false">Guingueta Proa a la Mar</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-rbarceloneta-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-rbarceloneta" type="button" role="tab"
+                                aria-controls="pills-rbarceloneta" aria-selected="false">R-Barceloneta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-garba-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-garba" type="button" role="tab" aria-controls="pills-garba"
+                                aria-selected="false">Llibreria La Garba</button>
+                        </li>
+                    </ul>
+                    <!--CONTINGUT BOTONS (PILLS)-->
+                    <div class="tab-content" id="pills-tabContent">
+                        <!--TANCA-->
+                        <div class="tab-pane fade show active" id="pills-tancar" role="tabpanel"
+                            aria-labelledby="pills-tancar-tab">
+                        </div>
+                        <!--GUINGUETA-->
+                        <div class="tab-pane fade" id="pills-guingueta" role="tabpanel"
+                            aria-labelledby="pills-guingueta-tab">
+                            <!--Contingut-->
+                            <div class="">
+                                <div w3-include-html="layouts/content-guingueta.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
+                        </div>
+                        <!--R-Barceloneta-->
+                        <div class="tab-pane fade" id="pills-rbarceloneta" role="tabpanel"
+                            aria-labelledby="pills-rbarceloneta-tab">
+                            <!--Contingut-->
+                            <div class="">
+                                <div w3-include-html="layouts/content-r-barceloneta.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
+                        </div>
+                        <!--La Garba-->
+                        <div class="tab-pane fade" id="pills-garba" role="tabpanel" aria-labelledby="pills-garba-tab">
+                            <!--Contingut-->
+                            <div class="">
+                                <div w3-include-html="layouts/content-garba.html"></div>
+                                <script>
+                                    includeHTML();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
     </div>
-
-
-
-
-
 
     <!-- Footer Start -->
     <div w3-include-html="layouts/footer.html"></div>
