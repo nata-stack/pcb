@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <!--Recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("contacte").submit();
+        }
+      </script>
+    </head>
+    <body>
+<!--FORMULARI-->
+<!--he afegit atr name i pattern per validació de dades-->
+<form name="contacte" action="formulari-salut.php" method="post">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <input name="Nom" required type="text" class="form-control border-1" placeholder="Nom o entitat"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" style="height: 55px;">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input name="Email" required type="email" class="form-control border-1" placeholder="Email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" style="height: 55px;">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="tel" name="Telèfon" class="form-control border-1" placeholder="Telèfon" style="height: 55px;">
+        </div>
+
+        <div class="col-12">
+            <textarea rows="3" name="Missatge" required class="form-control border-1" placeholder="Missatge"></textarea>
+        </div>
+        <div class="col-12">
+            <button class="g-recaptcha btn btn-primary w-100 py-3" data-sitekey="6LfyKkcgAAAAAObAb-0010MAlPaWQNNhDzH-sKMp" 
+            data-callback='onSubmit' 
+            data-action='submit'>Enviar</button>
+        </div>
+    </div>
+
+
+
+</form>
+</body>
+</html>

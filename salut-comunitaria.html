@@ -78,6 +78,79 @@
     </div>
     <!-- Page Header End -->
 
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <p class="lead ">
+                    La Salut té a veure amb tots els aspectes relacionats amb el benestar personal; abasta el nivell físic, mental, psicològic, emocional i fins i tot social. Des del Pla Comunitari impulsem iniciatives orientades a la prevenció, la promoció d’hàbits saludables i la participació ciutadana, tot enfortint la salut comunitària al barri.
+
+                </p>
+            </div>
+        </div>
+
+        <!--PROJECTES-->
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-9 border-start text-blue border-5">
+                <!--PROJECTES-->
+                <div class="">
+                    <h1 class="display-5 my-4">Projectes</h1>
+                    <p class="">
+                    </p>
+                    <!--BOTONS (PILLS)-->
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true"><i class="fas fa-times"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false"> EntreNosaltres</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile2-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile2" type="button" role="tab" aria-controls="pills-profile2"
+                                aria-selected="false">Escola de Salut</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--CONTINGUT BOTONS (PILLS)-->
+                <div class="tab-content" id="pills-tabContent">
+                    <!--TANCA-->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                    </div>
+                    <!--PIOL-->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-entre-nosaltres.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
+                        </div>
+                    </div>
+                    <!--CASAL COMUNITARI-->
+                    <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-escola-de-salut.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
     
     <!-- Footer Start -->
     <div w3-include-html="layouts/footer.html"></div>
