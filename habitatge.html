@@ -78,6 +78,78 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <p class="lead ">
+                    Davant la greu situació que pateix la ciutat (i La Barceloneta de manera particular) a causa de la dificultat per garantir l’accés i el manteniment de l’habitatge, provocada per un model socioeconòmic que permet –i fomenta – l’especulació, i obliga a molts veïns a abandonar el seu barri, ja que no poden assumir els altíssims lloguers, els veïns i les veïnes de La Barceloneta s’organitzen, amb el suport del Pla Comunitari, per impulsar una sèrie d’accions que englobem amb el nom de <b>Barceloneta pel Dret a l’Habitatge</b>.
+
+                </p>
+            </div>
+        </div>
+
+        <!--PROJECTES-->
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-9 border-start text-blue border-5">
+                <!--PROJECTES-->
+                <div class="">
+                    <h1 class="display-5 my-4">Barceloneta pel dret a l'habitatge</h1>
+                    <p class="">
+                    </p>
+                    <!--BOTONS (PILLS)-->
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true"><i class="fas fa-times"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Comissió d'habitatge i Assemblea d'habitatge de la Barceloneta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile2-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile2" type="button" role="tab" aria-controls="pills-profile2"
+                                aria-selected="false">Espai de participació</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--CONTINGUT BOTONS (PILLS)-->
+                <div class="tab-content" id="pills-tabContent">
+                    <!--TANCA-->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                    </div>
+                    <!--PIOL-->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-comissio-habitatge.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
+                        </div>
+                    </div>
+                    <!--CASAL COMUNITARI-->
+                    <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-participacio-habitatge.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
     
     <!-- Footer Start -->
     <div w3-include-html="layouts/footer.html"></div>
