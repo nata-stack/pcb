@@ -23,6 +23,13 @@
 }
 /* End: Video Responsive */
 
+/*button sin borde para el toggler*/
+
+.no-border{
+    border: 0px;
+    boder-style: none;
+}
+
 
 
 /*borde azul*/
