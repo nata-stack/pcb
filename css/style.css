@@ -44,8 +44,7 @@
     background-color: #3b78aa;
 }
 
-
- /*Masonry*/
+/*Masonry*/
 
 img {
     width: 100%;
@@ -57,7 +56,7 @@ img {
   }
   
   .masonry .mItem {
-    display: inline-block;
+    display:inline-block;
     margin-bottom: 16px;
     width: 100%;
   }
