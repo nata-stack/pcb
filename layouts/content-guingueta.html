@@ -1,3 +1,39 @@
+<!--FORMULARI DE CONTACTE-->
+<div class="row p-0">
+    <hr>
+    <div class="col-3 p-0">
+        <!-- Button trigger modal CONTACTE -->
+        <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal" data-bs-target="#guinguetaModal">
+            <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
+        </button>
+    </div>
+
+    <!-- Modal CONTACTE-->
+    <div class="modal fade" id="guinguetaModal" tabindex="-1" aria-labelledby="contacteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contacteModalLabel">Contacte Guingueta Proa a la Mar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>
+                </div>
+                <div class="modal-body">
+                    <!--Formulari de contacte-->
+                    <div w3-include-html="layouts/formulari-proa.html"></div>
+                    <script>
+                        includeHTML();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+<!--FORMULARI DE CONTACTE-->
+
+<!--CONTINGUT-->
 <!--Container amb 4 files-->
 <div class="container p-0">
     <div class="row">
@@ -55,4 +91,18 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+</div>
+
+<!-- Button trigger modal CONTACTE -->
+<div class="row mt-5">
+    <hr>
+    <!-- Button Contacte -->
+    <div class="col-lg-3 p-0">
+        <button type="button" class="btn btn-succes text-start" data-bs-toggle="modal" data-bs-target="#guinguetaModal">
+            <h3 style="color: #ffc720">Contacte <i class="far fa-comment-dots"></i></h3>
+        </button>
+    </div>
+
+
+    <hr>
 </div>
