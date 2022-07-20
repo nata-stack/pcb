@@ -116,6 +116,11 @@
                                 data-bs-target="#pills-profile2" type="button" role="tab" aria-controls="pills-profile2"
                                 aria-selected="false">Barceloneta Powers</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile3-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile3" type="button" role="tab" aria-controls="pills-profile3"
+                                aria-selected="false">Programa Nadons en Família</button>
+                        </li>
 
                     </ul>
                 </div>
@@ -125,7 +130,7 @@
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
                     </div>
-                    <!--PIOL-->
+                    <!--Prometeus-->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <!--Contingut-->
                         <div class="">
@@ -135,11 +140,21 @@
                             </script>
                         </div>
                     </div>
-                    <!--CASAL COMUNITARI-->
+                    <!--Barceloneta Powers-->
                     <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
                         <!--Contingut-->
                         <div class="">
                             <div w3-include-html="layouts/content-barceloneta-powers.html"></div>
+                            <script>
+                                includeHTML();
+                            </script>
+                        </div>
+                    </div>
+                     <!--Programa Nadons en Família-->
+                     <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+                        <!--Contingut-->
+                        <div class="">
+                            <div w3-include-html="layouts/content-programa-nadons-en-familia.html"></div>
                             <script>
                                 includeHTML();
                             </script>
