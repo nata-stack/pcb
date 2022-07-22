@@ -3086,6 +3086,18 @@ fieldset:disabled .btn {
     border-color: #ffc720
 }
 
+.btn-blue {
+    color: #fff;
+    background-color: #3b78aa;
+    border-color: #3b78aa
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #ffc720;
+    border-color: #ffc720
+}
+
 .btn-primary:hover {
     color: #000;
     background-color: #3b78aa;
