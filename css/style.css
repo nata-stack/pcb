@@ -5,6 +5,14 @@
     --dark: #353535;
 }
 
+#background-serveis{
+    background-image: url("../img/ambits-serveis-02.jpg");
+   
+    background-repeat: repeat;
+    background-size: auto;
+    height: 400px;
+}
+
 
 /* Start: Video Responsive */
 .video-responsive {
