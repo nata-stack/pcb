@@ -335,6 +335,38 @@ img {
     background-size: cover;
 }
 
+.page-header-salut {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/xarxa-entre-nosaltres-07.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-ocupacio {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/r-barceloneta-01.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-contacte {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/pla-comunitari-01.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-suport {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/bon-vei-bon-profit-06.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.page-header-justicia {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/barceloneta-diversa-09.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+
+.page-header-serveis-img-rotate {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/ambits-serveis-02.jpg) center bottom no-repeat;
+    transform: scaleX(-1);
+    background-size: cover;
+}
+
 .page-header-dones {
     background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/dones/FORALLWOMANKIND_RGB3.jpg) center center no-repeat;
     background-size: cover;
