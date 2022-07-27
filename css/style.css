@@ -360,10 +360,13 @@ img {
     background-size: cover;
 }
 
-
-.page-header-serveis-img-rotate {
+.page-header-serveis {
     background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/ambits-serveis-02.jpg) center bottom no-repeat;
-    transform: scaleX(-1);
+    background-size: cover;
+}
+
+.page-header-educacio {
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, 0)), url(../img/barceloneta-powers-01.jpg) center center no-repeat;
     background-size: cover;
 }
 
