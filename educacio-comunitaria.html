@@ -10,6 +10,10 @@
         content="El Pla Comunitari de la Barceloneta és una xarxa formada per veïnat, associacions, entitats, comerços, serveis municipals i administracions que treballem conjuntament per millorar la qualitat de vida de La Barceloneta."
         name="description">
 
+    <!--Nocodeapi feeds-->
+    <script type="module"
+        src="https://unpkg.com/@nocodeapi/embed-instagram-feed@latest/embed-instagram-feed.js?module"></script>
+
     <!--Script Include html-->
     <script src="js/include-html.js"></script>
 
@@ -149,9 +153,11 @@
                                 includeHTML();
                             </script>
                         </div>
+                        <!--instagram feed-->
+                        <embed-instagram-feed url="https://v1.nocodeapi.com/placomunitari/instagram/VZdpQwsjsRscPWLX"></embed-instagram-feed>
                     </div>
-                     <!--Prometeus-->
-                     <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+                    <!--Prometeus-->
+                    <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
                         <!--Contingut-->
                         <div class="">
                             <div w3-include-html="layouts/content-prometeus.html"></div>
